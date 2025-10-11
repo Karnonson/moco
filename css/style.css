@@ -1,3 +1,108 @@
-:root{
-    --white: #d7f6c9;
+:root {
+  --white: #d7f6c9;
+  --header: #b46e4e;
+  --background: #faf9f6;
+  --text: #1e1e1e;
+  --text-secondary: #6e6e6e;
+  --link-hover: #8f563a;
+  --gray: #141313;
+  --blue: #1857e9;
+}
+
+/*setting default page style*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+a:hover {
+  color: var(--link-hover);
+  text-decoration: none;
+}
+
+.main-btn {
+  width: fit-content;
+  padding: 5px 10px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+header {
+  background-color: var(--header);
+}
+
+nav {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 1rem;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.main-container {
+  border: 2px solid red;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.content-width {
+  max-width: 1200px;
+  margin: 0 auto;
+  border: 2px dashed blue;
+  /*padding: 25px 0;*/
+}
+
+.main-content {
+  display: flex;
+  gap: 40px;
+  flex: 1; /*push the footer to the buttom of the page*/
+}
+
+.sticky-left-panel {
+  position: sticky;
+  width: 250px;
+}
+
+.sticky-left-panel img {
+  /*border-radius: 50%;*/
+  object-fit: cover;
+  border-radius: 10px;
+}
+.right-card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.show-abstract {
+  padding: 5px 10px;
+  border-radius: 10px;
+  /*background-color: var(--blue);*/
+  width: fit-content;
+  color: var(--blue);
+  cursor: pointer;
+}
+
+.paper-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+footer {
+  background-color: var(--gray);
+  color: var(--white);
+  padding: 25px;
+  text-align: center;
 }

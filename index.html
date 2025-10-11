@@ -1,27 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="keywords" content="Mohamed Coulibaly">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="author" content="Mohamed Coulibaly">
-        <meta name="description" content="Mohamed Coulibaly — PhD candidate in Economics at HEC Montreal.">
-        <link rel="stylesheet" type="text/css" href="./css/style.css" >
-    </head>
-    <body>
-        <div class="main-conatiner">
-            <header>
-                <nav></nav>
-            </header>
-            <main>
-                <div class="sticky-left-panel">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Mohamed Coulibaly">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Mohamed Coulibaly">
+    <meta name="description" content="Mohamed Coulibaly — PhD candidate in Economics at HEC Montreal.">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+
+<body>
+    <div class="main-container">
+        <header>
+            <nav>
+                <div class="content-width">
                     <h1>Mohamed Coulibaly</h1>
                 </div>
-                <div class="main-content-card">
-                    <h2>Welcome !</h2>
-                    <p> I’m Mohamed Coulibaly a PhD candidate in economics at HEC Montreal.</p>
+            </nav>
+        </header>
+        <main class="main-content content-width">
+            <div class="sticky-left-panel">
+                <img src="./images/mohamed-coulibaly.jpg" width="250px" height="280px" alt="A man in black suit">
+                <h2>Mohamed Coulibaly</h2>
+                <a href="mailto:moco@hec.com" target="_blank" rel="noopener">Email</a>
+            </div>
+            <div class="right-card">
+                <h2>Welcome !</h2>
+                <p> I’m Ph.D. candidate in Applied Economics with a quantitative background in Statistics and
+                    Econometrics.<br>
+                    My research interests include Applied Economics and Applied Econometrics.<br>
+                    I have more than 6 years of experience in Data Analysis, Impact Evaluation, and Econometric
+                    Modeling. <br>
+                    I am proficient in quantitative and risk assessment methods, including Data Analytics, Data Science,
+                    Difference-in-Difference, Instrumental Variables, and Sectoral Risk Assessment.
+                </p>
+                <!-- The section about Working papers starts here-->
+                <div class="card">
+                    <h2>Working papers</h2>
+                    <!-- To create a new paper card, copy the code below-->
+
+                    <div class="paper-card">
+                        <h3>Stop That Train, I’m Starving : Impacts of Closing Rural Rail Services.</h3>
+                        <p class="author-label">(Job Market Paper )</p>
+                        <details class="abstract-container">
+                            <summary class="show-abstract">Show more</summary>
+                            <p class="has-abstract">
+                                Paper summary goes here.
+                            </p>
+                        </details>
+                        <button type="button" class="main-btn"
+                            onclick="window.open(`https://www.nber.org/papers/w32456`, '_blank', 'noopener')">
+                            View report
+                        </button>
+                    </div>
+                    <!--Stop the new parper card’s copy here. Paste it immediately before </div> below-->
+
+                    <div class="paper-card">
+                        <h3>A Local Development Index for the CAR and Mali</h3>
+                        <p class="author-label">with Hoogeveen, J., Katayama, R., & Yama, G. C. (2020)</p>
+                        <details class="abstract-container">
+                            <summary class="show-abstract">Show more</summary>
+                            <p class="has-abstract">
+                                Paper summary goes here.
+                            </p>
+                        </details>
+                        <button type="button" class="main-btn"
+                            onclick="window.open(`https://www.nber.org/papers/w32456`, '_blank', 'noopener')">
+                            View report
+                        </button>
+                    </div>
                 </div>
-            </main>
-        </div>
-    </body>
+                <!--The section about Publications starts here. It’s also the end of the working papers section-->
+                <div class="card">
+                    <h2>Publications</h2>
+                    <div class="paper-card">
+                        <h3>A Sharp Test for the Judge Leniency Design</h3>
+                        <p class="author-label">(with Yu-Chin Hsu, Ismael Mourifié and Yuanyuan Wan )</p>
+                        <details>
+                            <summary class="show-abstract">Show more</summary>
+                            <p>
+                                We propose a new specification test to assess the validity of the judge leniency design.
+                                We characterize a set of sharp testable implications, which exploit all the relevant
+                                information in the observed data distribution to detect violations of the judge leniency
+                                design assumptions.
+                                The proposed sharp test is asymptotically valid and consistent and will not make
+                                discordant recommendations.
+                                When the judge’s leniency design assumptions are rejected, we propose a way to salvage
+                                the model
+                                using partial monotonicity and exclusion assumptions, under which a variant of the Local
+                                Instrumental Variable (LIV)
+                                estimand can recover the Marginal Treatment Effect. Simulation studies show our test
+                                outperforms existing non-sharp tests by significant margins.
+                                We apply our test to assess the validity of the judge leniency design using data from
+                                Stevenson (2018),
+                                and it rejects the validity for three crime categories: robbery, drug selling, and drug
+                                possession.
+                            </p>
+                        </details>
+                        <button type="button" class="main-btn"
+                            onclick="window.open(`https://www.nber.org/papers/w32456`, '_blank', 'noopener')">
+                            View report
+                        </button>
+                    </div>
+                </div>
+                <!-- The section about Publications ends here -->
+            </div>
+        </main>
+        <footer>
+            <div class="content-width">
+                <p>© 2025 Mohamed Coulibaly</p>
+            </div>
+        </footer>
+    </div>
+</body>
+
 </html>
