@@ -22,8 +22,43 @@
         <main class="main-content content-width">
             <div class="sticky-left-panel">
                 <img src="./images/mohamed-coulibaly.jpg" width="250px" height="280px" alt="A man in black suit">
-                <h2>Mohamed Coulibaly</h2>
-                <a href="mailto:moco@hec.com" target="_blank" rel="noopener">Email</a>
+                <div class="about-me">
+                    <h2>Mohamed Coulibaly</h2>
+                    <!--
+                                    Added social links block below. Each link uses an inline SVG icon so there
+                                    are no external image or font dependencies. The comments around each
+                                    link explain what it does and why it's there.
+                                -->
+                    <div class="social-links">
+                        <!-- LinkedIn link: opens in a new tab -->
+                        <a class="social-link" href="https://www.linkedin.com" target="_blank" rel="noopener"
+                            aria-label="LinkedIn">
+                            <img src="./images/linkedin-logo.webp" width="45px" height="45px" alt="LinkedIn logo"
+                                class="social-link--linkedin">
+                        </a>
+
+                        <!-- GitHub link: opens in a new tab -->
+                        <a class="social-link" href="https://github.com" target="_blank" rel="noopener"
+                            aria-label="GitHub">
+                            <img src="./images/github-logo.webp" width="35px" height="35px" alt="GitHub logo">
+                        </a>
+
+                        <!-- Email link: mailto opens the user's email client -->
+                        <a class="social-link" href="mailto:moco@hec.com" aria-label="Email">
+                            <!-- Simple envelope icon -->
+                            <img src="./images/email-icon.webp" width="43px" height="43px" alt="Email icon">
+                        </a>
+
+                        <!-- Email link: mailto opens the user's email client -->
+                        <a class="social-link" href="./files/CV_MC_EY.pdf" target="_blank" rel="noopener"
+                            aria-label="Email">
+                            <!-- Simple envelope icon -->
+                            <img src="./images/cv-icon.webp" width="30px" height="30px" alt="Email icon">
+                        </a>
+
+                        <!-- Add more social links as needed -->
+                    </div>
+                </div>
             </div>
             <div class="right-card">
                 <h2>Welcome !</h2>
