@@ -19,7 +19,7 @@
   --gray: #141313;
   --blue: #1857e9;
   --lblue: #71b8ff;
-  --lgray: #bec1c5;
+  --lgray: #c3d8f471;
 }
 
 /*setting default page style*/
@@ -45,16 +45,16 @@ a:hover {
 .main-btn {
   width: fit-content;
   padding: 5px 10px;
-  font-size: 18px;
+  font-size: 13px;
   font-weight: 500;
   cursor: pointer;
-  background-color: var(--lblue);
-  border: none;
+  background-color: var(--lgray);
+  border: 2px solid var(--lblue);
   border-radius: 5px;
   transition: background-color 120ms ease;
 }
 .main-btn:hover {
-  background-color: var(--lgray);}
+  background-color: var(--link-hover);}
 
 header {
   padding: 15px 25px;
