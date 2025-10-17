@@ -18,6 +18,8 @@
   --link-hover: #8f563a;
   --gray: #141313;
   --blue: #1857e9;
+  --lblue: #71b8ff;
+  --lgray: #bec1c5;
 }
 
 /*setting default page style*/
@@ -45,11 +47,16 @@ a:hover {
   padding: 5px 10px;
   font-size: 18px;
   font-weight: 500;
+  cursor: pointer;
+  background-color: var(--lblue);
+  border: none;
+  border-radius: 5px;
+  transition: background-color 120ms ease;
 }
+.main-btn:hover {
+  background-color: var(--lgray);}
 
 header {
-  display: flex;
-  align-items: center;
   padding: 15px 25px;
   background-color: var(--header);
   /*
@@ -63,12 +70,15 @@ header {
 }
 
 nav {
-  position: sticky;
-  position: -webkit-sticky;
-  top: 1rem;
-  left: 0;
-  bottom: 0;
-  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+nav ul{
+  list-style: none;
+  box-shadow: 2px 2px 10px var(--text-secondary);
 }
 
 .main-container {
@@ -93,7 +103,8 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 30px;
+  height: fit-content;
+  padding: 30px 5px 0px 5px;
   gap: 15px;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
 }
@@ -108,7 +119,7 @@ nav {
   
   position: sticky;
   top: 550px;  offset from the top to clear the sticky header */
-  width: 250px;
+  width: 260px;
   max-width: 35%;
   flex-wrap: wrap;
   align-self: flex-start;
@@ -123,7 +134,7 @@ nav {
 @media (min-width: 1000px) {
   .sticky-left-panel {
     position: fixed;
-    top: calc(var(--header-height) + 6.75rem); /* sit below the header */
+    top: calc(var(--header-height) + 5.75rem); /* sit below the header */
     /*
       Compute left offset: center the content-width and then position the
       panel at the left edge of that content area. Using calc with 50vw
@@ -192,13 +203,26 @@ nav {
   gap: 20px;
 }
 
+.section-card{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 38px;
+}
 .show-abstract {
   padding: 5px 10px;
-  border-radius: 10px;
-  /*background-color: var(--blue);*/
   width: fit-content;
   color: var(--blue);
   cursor: pointer;
+
+}
+
+.has-abstract{
+  border: 2px dashed var(--text-secondary);
+  padding: 25px;
+  background-color: var(--lgray);
+  width: fit-content;
+  border-radius: 10px;
 }
 
 .paper-card {
